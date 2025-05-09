@@ -8,4 +8,6 @@ WORKDIR /scrap
 
 RUN npm install
 
+RUN npx puppeteer browsers install chrome
+
 CMD ["node", "main.cjs"]
